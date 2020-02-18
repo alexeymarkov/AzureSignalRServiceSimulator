@@ -1,5 +1,5 @@
 # Introduction 
-Azure SignalR Service Simulator.
+Azure SignalR Service Simulator / Azure SignalR Service Emulator.
 
 An implementation of Azure SignalR Service to run locally.
 It includes:
