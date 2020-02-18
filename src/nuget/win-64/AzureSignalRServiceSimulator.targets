@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="AzureSignalRServiceSimulatorExecutableToBin" BeforeTargets="AfterBuild">
+		<PropertyGroup>
+			<AzureSignalRServiceSimulatorSrcPath>$(MSBuildThisFileDirectory)..\executable\AzureSignalRServiceSimulator.exe</AzureSignalRServiceSimulatorSrcPath>
+			<AzureSignalRServiceSimulatorTargetPath Condition=" '$(AzureSignalRServiceSimulatorTargetPath)' == '' ">$(TargetDir)</AzureSignalRServiceSimulatorTargetPath>
+		</PropertyGroup>
+		<Copy SourceFiles="$(AzureSignalRServiceSimulatorSrcPath)" DestinationFiles="$(AzureSignalRServiceSimulatorTargetPath)AzureSignalRServiceSimulator.exe" SkipUnchangedFiles="true"></Copy>
+	</Target>
+</Project>

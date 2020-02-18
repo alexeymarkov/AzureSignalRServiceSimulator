@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>AzureSignalRServiceSimulator</id>
+		<version>0.0.4</version>
+		<owners>Alexey Markov</owners>
+		<authors>Alexey Markov</authors>
+		<summary>AzureSignalRServiceSimulator</summary>
+		<projectUrl>https://github.com/alexeymarkov/AzureSignalRServiceSimulator</projectUrl>
+		<description>AzureSignalRServiceSimulator</description>
+	</metadata>
+	<files>
+		<file src="..\..\..\build\win-64\AzureSignalRServiceSimulator.exe" target="executable"/>
+		<file src="AzureSignalRServiceSimulator.targets" target="build"/>
+	</files>
+</package>
