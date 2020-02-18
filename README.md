@@ -26,9 +26,9 @@ The configuration in appsettings.json is self explaining.
 ```
 
 * Kestrel
- * EndPoints
-   * Https
-     * Url		: the address of Azure SignalR Service Simulator
+  * EndPoints
+    * Https
+      * Url		: the address of Azure SignalR Service Simulator
 
 ### SignalR configuration
 
