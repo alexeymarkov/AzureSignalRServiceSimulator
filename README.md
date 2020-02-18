@@ -10,7 +10,7 @@ It includes:
 
 The configuration in appsettings.json is self explaining.
 
-### Endpoint configucation
+### Endpoint configuration
 
 ```json
 "Kestrel": {
@@ -30,7 +30,7 @@ The configuration in appsettings.json is self explaining.
    * Https
      * Url		: the address of Azure SignalR Service Simulator
 
-### SignalR configucation
+### SignalR configuration
 
 ```json
 "SignalR": {
