@@ -12,6 +12,7 @@ The configuration in appsettings.json is self explaining.
 
 ### Endpoint configucation
 
+```json
 "Kestrel": {
     "EndpointDefaults": {
         "Protocols": "Http1"
@@ -22,6 +23,7 @@ The configuration in appsettings.json is self explaining.
         }
     }
 }
+```
 
 * Kestrel
  * EndPoints
@@ -30,6 +32,7 @@ The configuration in appsettings.json is self explaining.
 
 ### SignalR configucation
 
+```json
 "SignalR": {
     "AccessKey": "NPhD3PeL/jY5GHyTQ1PTJfC1vVyDmxUnJamPHwywhC0=",
     "CORS": [
@@ -40,6 +43,7 @@ The configuration in appsettings.json is self explaining.
         "hub2"
     ]
 }
+```
 
 * SignalR
   * Hubs		: add hub names you would like to use (Azure SignalR Service manages hub names dynamically for you but Simulator cannot do this)
