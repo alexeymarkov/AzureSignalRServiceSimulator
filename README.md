@@ -64,10 +64,13 @@ Endpoint={Kestrel:EndPoints:Https:Url};AccessKey={SignalR:AccessKey};Version=1.0
 You can
 
 1) Build the project yourself
+
 2) Use the NuGet package: https://www.nuget.org/packages/AzureSignalRServiceSimulator
   Example PowerShell script (adjust a path to appsettings.json):
+  ```powershell
   $AzureSignalRServiceSimulatorPackage = (Install-Package AzureSignalRServiceSimulator -Scope CurrentUser -Force)
   $NuGetPackagesPath = [System.Environment]::ExpandEnvironmentVariables("%LOCALAPPDATA%\PackageManagement\NuGet\Packages")
   start-process "$($NuGetPackagesPath)\AzureSignalRServiceSimulator.$($AzureSignalRServiceSimulatorPackage.Version)\executable\AzureSignalRServiceSimulator.exe" -Args "--ConfigFile=$($PSScriptRoot)\configs\AzureSignalRServiceSimulator\appsettings.json"
+```
 
 3) Download binaries from Releases
